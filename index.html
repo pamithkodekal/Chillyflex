@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChillyFlex</title>
+  <style>
+    body{
+        background-color: #000000;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    } 
+    .backimg img{
+        height:80vh;
+        width: 100vw;
+       opacity:30%;
+       object-fit: cover;
+      
+    }
+    .backimg{ 
+        position: relative;
+        border: 2ox solid black;
+        height:80vh;
+        width: 100vw;
+    background-color: black;
+    
+    }
+    svg{
+        z-index: 1;
+        position: relative;
+        top: -140%;
+        left:-550px;
+      
+    }
+
+.language   select {
+ width: 160px;
+ border: 2px solid white;
+ background: transparent;
+ color: rgb(255, 255, 255);
+ font-size: 15px;
+ font-family: 'Times New Roman', Times, serif;
+text-align: center;
+
+
+ 
+    } 
+     .language option{
+       
+        background: black;
+    } 
+.language img{
+ position: relative;
+ color: aliceblue;
+ left: 58px;
+  height:40px;
+  width:50px;
+ 
+ }
+
+.language button{
+   height:40px;
+   width:90px;
+   background-color: red;
+   color: #ffffff;
+   text-align: center;
+   font-style: bold;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+.language{
+
+display: flex;
+gap: 6px;
+position: relative;
+top: -600px;
+left:1070px;
+
+}
+.hed p{
+  position: relative;
+  top:20px;
+}
+ .hed{
+color:white;
+position: relative;
+text-align: center;
+bottom:440px ;
+font-family:Arial, Helvetica, sans-serif;
+
+ }
+ .mail{
+  display: flex;
+  gap:5px;
+  justify-content: center;
+  position: relative;
+  top:30px;
+ }
+
+.mail input{
+  border : 2px solid gray;
+  color:#000000;
+ background-color: transparent;
+width:220px;
+height: 60px;
+}
+
+.mail button{
+/* border : 2px solid rgb(255, 0, 0); */
+color:#ffffff;
+background-color:red;
+width:220px;
+height: 60px;
+font-size: 20px;
+text-align: start;
+
+}
+
+
+.line {
+  position: relative;
+  top:-305px;
+  width: 100vw;
+  height: 6px;               /* Increase height for visible curve */
+  background-color: red;
+  border: none;
+ border-top-left-radius:100% 100px ;
+  border-top-right-radius: 100% 100px;
+  box-shadow: 14px 34px 55px red;
+}
+.T{
+position: relative;
+top: -286px;
+color: white;
+  
+}
+
+ .ted{
+position: relative;
+  display:flex;
+  height:244px;
+  width:100vw;
+ overflow-y: hidden;
+ overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  top: -272px;
+
+  
+}
+.imge {
+  min-width: 15vw;          
+  height: 100%;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+.ted::-webkit-scrollbar {
+  height: 10px;
+  
+}
+
+.ted::-webkit-scrollbar-track {
+  background: #111;
+  border-radius: 5px;
+
+}
+
+.ted::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+
+.ted::-webkit-scrollbar-thumb:hover {
+  background: #ff4d4d;
+} 
+
+.tt{
+  color:white;
+  position: relative;
+  top:-258px;
+}
+.reasons{
+  display: flex;
+position: relative; 
+  gap:30px;
+  top:-260px;
+  justify-content: space-around;
+
+}
+.rea{
+  
+  color: white;
+  border: 2px solid blue;
+  height:230px;
+  width:250px;
+  border-radius: 10px;
+padding:4px;
+background: linear-gradient(to bottom right, #000066 42%, #ff0066 82%);
+}
+
+.rea p{
+  position: relative;
+  top:-34px;
+}
+
+.rea img{
+  position: relative;
+   left:150px;
+  height:70px;
+  width:70px;
+  top:-22px;
+}
+.Qus{
+  color:white;
+  position: relative;
+  top:-240px;
+}
+.ques{
+margin: 14px;
+ position: relative;
+top: -200px;
+padding: 12px;
+text-align: start;
+ border: 2px solid black;
+ height:50px;
+ width:40vw;
+ color: white;
+ background-color: grey;
+ font-size:20px;
+ left:250px;
+
+}
+
+.ques:hover{
+  background-color: lightgrey;
+  color: #514545;
+}
+
+.end{
+  color:white;
+  position: relative;
+  top:-150px;
+  text-align: center;
+}
+
+.Endmail{
+  right: -57px;
+  display: flex;
+  gap:10px;
+  justify-content: center;
+  position: relative;
+  top:-130px;
+ }
+
+.Endmail input{
+  border : 2px solid gray;
+  color:#000000;
+ background-color: transparent;
+width:220px;
+height: 60px;
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.Endmail button{
+/* border : 2px solid rgb(255, 0, 0); */
+color:#ffffff;
+background-color:red;
+width:220px;
+height: 60px;
+font-size: 20px;
+text-align: start;
+
+}
+
+  </style>
+</head>
+<body>
+  <div class="backimg"> 
+    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f562aaf4-5dbb-4603-a32b-6ef6c2230136/dh0w8qv-9d8ee6b2-b41a-4681-ab9b-8a227560dc75.jpg/v1/fill/w_1280,h_720,q_75,strp/the_netflix_login_background__canada__2024___by_logofeveryt_dh0w8qv-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvZjU2MmFhZjQtNWRiYi00NjAzLWEzMmItNmVmNmMyMjMwMTM2XC9kaDB3OHF2LTlkOGVlNmIyLWI0MWEtNDY4MS1hYjliLThhMjI3NTYwZGM3NS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.LOYKSxIDqfPwWHR0SSJ-ugGQ6bECF0yO6Cmc0F26CQs"   alt="png"   >
+    
+    
+   <svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Define an arc path -->
+  <path id="arc" d="M 100 150 Q 250 50 400 150" fill="transparent" />
+
+  <!-- Apply text to the arc -->
+  <text font-size="9" fill="#E50914" font-weight="bold" letter-spacing="2" font-family="Arial, Helvetica, sans-serif">
+    <textPath href="#arc" startOffset="50%" text-anchor="middle">
+      CHILLYFLEX
+    </textPath>
+  </text>
+</svg>
+
+  </div>
+<div class="language">
+  <div class="symbol"> <img src="https://cdn-icons-png.flaticon.com/128/5396/5396271.png"  alt="translate" height="12px;" width="24px;" ></div>
+<select name="Language"> 
+  <option value="Marathi">Marathi</option>
+  <option value="Kannada">Kannada</option>
+  <option value="English">English</option>
+</select>
+
+<div class="button">
+  <button>Sign in</button>
+</div>
+
+  </div> 
+  
+<div class="hed">
+<h1>Unlimited movies,<br>TV shows and more</h1>
+<h2>Starts at ₹149. Cancel at any time.</h2>
+<p>Ready to watch? Enter your email to create or restart your membership.
+</p>
+<div class="mail"> 
+<input type="email" placeholder="Email Address" > 
+<button><b>Get Started</b><b style="margin:20px; font-size: 28;">></b></button> 
+</div>
+</div>
+<div class="line"></div>
+<h1 class="T">Trending</h1>
+<div class="ted">
+  <div class="imge im1"><img  src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABWS-EyoFBa-Svry6VvSCb6i3SN_WT20j-Iy5uiKWKH9rNk9qGhr97KLX_so6qg-EGRk5kyuXamvO6bwxx_DptuTt_iIGWIAxkoA.jpg?r=c23"         ></div>
+  <div class="imge im2">
+<img  src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABXiu1E3IobwEOi4dXbQMUMsvJ8I-IqxUL1F8GD2PomSU1diLa7zMgsMGjFL3ll7DrqgZ83qEsUjFacKSphxN0zjhKjrTUq6suGY.jpg?r=d66"       ></div>
+  <div class="imge im3"><img  src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABQ2lygENQ58jdDOXRdp6rTzib_Z5wBhfVumcN0GiI0PSsb8A7v_bEqis_Rm1Y_b0OrWxc3Qjv9nOUCHAhzMXdtuKul3FzbWWLFsZc9O5Vx6PcHuXpJmM7VtVr2Enrtvw2XjR.jpg?r=63b"  ></div>
+  <div class="imge im3"><img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMxlEgYv62m8pKAafHDX-SQI32dGTMTfwGTg&s"         >3</div>
+  <div class="imge im4"><img  src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABQ2lygENQ58jdDOXRdp6rTzib_Z5wBhfVumcN0GiI0PSsb8A7v_bEqis_Rm1Y_b0OrWxc3Qjv9nOUCHAhzMXdtuKul3FzbWWLFsZc9O5Vx6PcHuXpJmM7VtVr2Enrtvw2XjR.jpg?r=63b"         ></div>
+  <div class="imge im5"><img  src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABViqdtr9ZatqPa3P9T418vFq3iq4Ma4x1JUNFKxbIS5dPSoG_5VkNoEKXKBODntJNx_mCT_z0fcGegToBNEHLaVr3qyqSGDY67I.jpg?r=062"         ></div>
+  <div class="imge im6"><img  src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABa5jDjPetBJO0jgCfZHwMsKz5hkeopxLqh8hLCPqhIW2jviuL7hFC3vXLOIXAJNsjz5ijUoGK-JdosDsdxCq5Rg1kqeIiqQLHQQ.jpg?r=81d"         ></div>
+  <div class="imge im7"><img  src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZ_Z53fg0mDul7w0DZtChXYxl0nb4BNctABvh_p2ml_c0H3ghSLJGkNExHSKJ1-jkLZ1_yoxPFL89HnnWN42zsLcBAZNUkMzIIo.jpg?r=ad2"         ></div>
+  <div class="imge im8"><img  src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABfnhM64pMiWbUrUoCE3sSrSN6eyc6x4Vd917XaYvxV7RGnku1O5nTV_6M8RrsfT0xxFfmwGmHGN6keFMyrXq3G3b-D8evaoUQcA.jpg?r=7de"         ></div>
+  <div class="imge im9"><img  src="https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABTixI7Cz0HVkuB1KQvyT9xedX83h2ob_PwNRW74psOcCGFKugKnc9ErhsaNh6JyyjGFS7ZLrxafx7yAkgdqlsT2kP9b0oGHIRnY.jpg?r=a92"         ></div> 
+
+
+</div>
+<h2 class="tt">More Reasons To Join</h2>
+<div class="reasons">
+  <div class="rea"><h3>Enjoy on your TV</h3><br><p>Watch on smart TVs, PlayStation,<br> Xbox, Chromecast, Apple TV, Blu-ray players and more.</p><img src="https://cdn-icons-png.flaticon.com/128/7465/7465191.png"></div>
+  <div class="rea"><h3>Download your shows to watch offline</h3><br><p>Save your favourites easily and always have something to watch</p><img src="https://cdn-icons-png.flaticon.com/128/10747/10747307.png"></div>
+  <div class="rea"><h3>Create profiles for kids</h3><br><p>Send kids on adventures with their favourite characters in a space made just for them — free with your membership.</p><img src="https://cdn-icons-png.flaticon.com/128/9329/9329301.png"></div>
+  <div class="rea"><h3>Watch everywhere</h3><br><p>Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p><img src="https://cdn-icons-png.flaticon.com/128/3884/3884934.png"></div>
+</div>
+  <h3 class=Qus>Frequently Asked Questions</h3>
+  <div class="ques">What is Chillyflex</div>
+  <div class="ques">How much does ChillyFlex Cost</div>
+  <div class="ques">Where can I watch?</div>
+  <div class="ques">How do I cancel</div>
+  <div class="ques">What can I watch on Chillyflex?</div>
+  <div class="ques">Is Chillyflex food for kids?</div>
+ <h4 class="end">Ready to watch? Enter your email to create or restart your membership.</h4>
+<div class="Endmail"> 
+<input type="email" placeholder="Email Address" > 
+<button><b>Get Started</b><b style="margin:20px; font-size: 28;">></b></button> 
+</div>
+</body>
+</html>
